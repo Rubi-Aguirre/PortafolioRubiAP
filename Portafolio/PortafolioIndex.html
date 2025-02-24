@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Rubi AP</title>
+    <style>
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .panel {
+            display: none;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="info">
+            <h1>Rubi AP</h1>
+            <h4>Proyecto Rendic</h4>
+            <p> 
+                Facilitar la búsqueda y gestión de casas y departamentos para que los estudiantes foráneos encuentren un lugar para rentar de manera rápida y segura, y los arrendadores gestionen sus propiedades mediante una plataforma web segura y eficiente.
+                Misión 
+                Ofrecer servicios de educación superior tecnológica de calidad, que a través de la formación integral de profesionistas competitivos y la generación de conocimiento se contribuya al desarrollo sustentable en el ámbito regional, bajo el principio de equidad y transparencia.
+                
+                Desarrollado de HTML, CSS, JavaScript y 
+                Base de datos relacional: MySql
+                </p>
+                
+            <h4> Proyecto Visión por computadora</h4>
+                <p>
+                    Este proyecto consta de la iteración por medio de una cámara para detectar el movimiento de ma palma de la mano, su objetivo cumple con mostrar una serie de caracteres en una matriz de 4 x 16 donde al mostrar la palma una vez aparece una letra y pasa toda la matriz de izquierda a derecha y se esconde.
+                    </p>
+
+        </div>
+
+        <button class="accordion">Lenguajes de Programación</button>
+        <div class="panel">
+            <ul>
+                <li>Java</li>
+                <li>C#</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Herramientas</button>
+        <div class="panel">
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>Visual Studio Preview</li>
+                <li>Thonny</li>
+                <li>Jupyter</li>
+                <li>Apache</li>
+                <li>MySQL</li>
+                <li>SQL Server</li>
+                <li>Excel</li>
+                <li>Git Bash</li>
+                <li>GitHub</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Habilidades Blandas</button>
+        <div class="panel">
+            <ul>
+                <li>Atención al cliente</li>
+                <li>Disciplina</li>
+                <li>Entusiasmo</li>
+                <li>Responsabilidad</li>
+                <li>Creatividad</li>
+                <li>Compromiso</li>
+                <li>Ambición</li>
+                <li>Amabilidad</li>
+                <li>Organización</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>Ing. En Sistemas Computacionales</strong></p>
+            <p>21 años | Inglés Intermedio</p>
+            <img src="correo.png" alt="Correo">
+            <p>📞 438 151 0675</p>
+        </div>
+    </div>
+
+    <script>
+        const accordions = document.querySelectorAll(".accordion");
+        
+        accordions.forEach(button => {
+            button.addEventListener("click", function() {
+                this.classList.toggle("active");
+                let panel = this.nextElementSibling;
+                
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
